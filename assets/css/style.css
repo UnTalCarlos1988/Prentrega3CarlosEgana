@@ -1,0 +1,151 @@
+*{
+    padding: auto;
+    margin: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+ body{
+  background-image: url(../imagenes/fondo-geometrico.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
+ }
+
+ nav {
+ 
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: auto; 
+  border: 10px outset black;
+  border-radius: 16px;
+  padding: 1.5em 5%;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: row center; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: row; 
+    align-items: flex-start; 
+    height: auto; 
+  }
+
+  nav ul {
+    margin-top: 20px;
+    flex-direction: column; 
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px; 
+  }
+}
+
+
+
+h1 {
+  text-align: center;
+  background-color: white;
+  color: black;
+  width: 60%; 
+  max-width: 400px; 
+  height: auto;
+  border: 10px outset black;
+  border-radius: 16px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+}
+
+
+@media screen and (max-width: 768px) {
+  h1 {
+      width: 80%; 
+      max-width: 100%; 
+  }
+}
+
+section{
+  display: flex;
+  width: 90%;
+  height: 400px;
+  padding: 0;
+  margin: auto;
+}
+  
+section img  {
+width: 0px;
+flex-grow: 1;
+object-fit: cover;
+opacity: .8;
+transition: 1s ease;
+max-height: 400px;
+}
+
+section img:hover{
+
+  cursor: crosshair;
+  width: 10%;
+  opacity: 1;
+  filter: contrast(120%);
+
+}
+
+h2 {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  width: 90%; 
+  max-width: 400px; 
+  height: auto; 
+  display: block; 
+  margin: 30px auto; 
+  border: 10px outset black;
+  border-radius: 16px;
+}
+
+p {
+  padding: 20px;
+  text-align: justify;
+  background-color: white;
+  color: black;
+  width: 90%; 
+  max-width: 800px; 
+  height: auto; 
+  display: block; 
+  margin: 10px auto; 
+  border: 10px outset black;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  h2, p {
+    width: 95%; 
+    margin: 10px auto; 
+    text-align: left; 
+  }
+}
+
